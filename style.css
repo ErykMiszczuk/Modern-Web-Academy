@@ -1,0 +1,44 @@
+.bordered {
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+    border: 2px solid black;
+}
+
+.center-text {
+    text-align: center;
+    color: aqua;
+}
+
+#dom {
+    font-family: fantasy;
+    font-size: 2em;
+}
+
+.nav_item {
+    color: red;
+}
+
+.item {
+    font-size: 50px;
+    font-weight: 500;
+    width: 10%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+
+@media (min-width: 800px) {
+    .wrapper {
+        flex-direction: row;
+    }
+    
+    .item {
+        width: 20%;
+    }
+}
