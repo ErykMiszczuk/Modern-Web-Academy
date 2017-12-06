@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+.column {
+  margin: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item {
+  border: 2px dashed orange;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.item-left {
+flex-grow: 1;
+}
+
+.item-left:nth-child(2) {
+  flex-grow: 2;
+}
+
+.item-right:nth-child(2) {
+  flex-grow: 4;
+}
+
+.item-right:nth-child(1) {
+  flex-grow: 2;
+}

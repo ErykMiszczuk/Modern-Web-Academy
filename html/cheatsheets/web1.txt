@@ -1,0 +1,70 @@
+###Struktura HTML###
+
+<head></head> <- tutaj umieszczamy tzw. meta dane* + załączamy pliki css/js
+<body></body> <- a tutaj za pomocą html tagów budujemy strukture strony // to co widoczne na stronie
+
+*meta dane - "HTML metadata is data about the HTML document. Metadata is not displayed.
+Metadata typically define the document title, character set, styles, links, scripts, and other meta information"
+
+
+###TAGI###
+
+    - <div></div>
+        - używamy do grupowania elementów
+        - domyślnie zajmuje całą szerokość strony/elementu, w którym się znajduje, , 
+            tym samym nie można ustawić innego elementu obok niego 
+    - <span></span>
+    - <hN></hN>
+        - headery - 1<=N<=6
+        - służą do nadawania nagłówków sekcjom 
+        - domyślnie zajmuje całą szerokość strony/elementu, w którym się znajduje
+    - <p></p>
+        - paragraf
+        - domyślnie zajmuje całą szerokość strony/elementu, w którym się znajduje (patrz hn i div)
+    - <a href=""></a>
+        - link, w atrybucie href podajemy ścieżkę do strony, na która może nas przenieść
+        - dostępne są atrybuty pozwalające opisać w jaki sposób mamy przejść do strony, 
+          tzn. czy mamy otworzyć nowe okno, zakładkę itp. 
+    - <pre></pre>
+        - tekst wewnątrz tagu formatowany z uwzględnieniem spacji i znaków nowej lini
+    - <img src="" />
+        - tag umożliwający nam pokazanie zdjęcia
+        - src="" podaje się ścieżkę do zdjęcia
+        - atrybut alt="" służy nam do podania wartości (tekst) zastępczej, która pojawi się, 
+        gdy zdjęcie nie zostanie załadowane
+    - <button></button> - przycik
+    - <section></section>
+        - tag wprowadzony w HTML5 - zachowuje się dokładnie jak div ale...
+        - w odróżnieniu od diva mówi nam, że to co jest wewnątrz niego jest spójną całością tworzącą 
+            sekcję na stronie.
+    - <header></header>
+        - tag wprowadzony w HTML5 - wewnątrz tego tagu podajemy główne informacje o stronie i/lub nawigacje 
+    - <footer></footer> 
+    - <nav></nav> - wewnątrz tagu podajemy główną nawigację po stronie
+    - <address></address> - adres
+
+
+##STYLE##
+
+margin-top/margin-right/margin-bottom/margin-left : X <- marginesy X - wartość
+padding-top/padding-right/padding-bottom/padding-left : X <- padding X -wartość
+
+
+##FLEXBOX##
+
+Style kontenera
+----------------
+display: flex  // umożliwia korzystania z flexible box
+flex-direction: row/column/reverse-row/reverse-column
+justify-content: flex-start/center/flex-end/space-around/space-between
+align-items: flex-start/center/flex-end/stretch/baseline
+flex-wrap: nowrap/wrap/wrap-reverse
+
+
+Style elementu
+---------------
+flex-basis: podstawowa wartość (szerokość/wysokość) elementu (px/%)
+flex-grow: stosunek o jaki ma rozszerzać się element (o ile ma puste pole)
+flex-shrink: stosunek o jaki element ma się zmniejszać
+align-self: ustawienie elementu prostopadle względem justify-content;
+

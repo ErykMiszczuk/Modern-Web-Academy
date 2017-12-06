@@ -1,0 +1,13 @@
+<p>
+  todo-list works!
+</p>
+<div *ngFor="let todo of todos" class="todo-item">
+  <div *ngIf="!todo.getStatus()">
+    {{todo.getTask}}
+  </div>
+</div>
+
+<input type="text" [(ngModel)]='newTaskName'>
+{{newTaskName}}
+
+<button (click)="addNewTask()">dodaj zadanie</button>
